@@ -6,16 +6,14 @@ const Contact = () => (
                         <p>Send me a message below!</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form name="contact" method="POST" enctype="text/plain" data-netlify="true" data-netlify-recaptcha="true">
+                                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                                     <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div className="6u 12u$(xsmall)"><input type="email" name="email" id="_replyto" placeholder="Email" /></div>
-                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                                        <div data-netlify-recaptcha="true"></div>
+                                        <p className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></p>
+                                        <p className="6u 12u$(xsmall)"><input type="email" name="email" id="_replyto" placeholder="Email" /></p>
+                                        <p className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></p>
+                                        <p data-netlify-recaptcha="true"></p>
+                                        <p><button type="submit">Submit</button></p>
                                     </div>
-                                <ul className="actions ">
-                                    <li><button type="submit">Submit</button></li>
-                                </ul>
                                 </form>
                             </div>
                             <div className="4u 12u$(small)">
