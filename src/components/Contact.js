@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => (
     <section id="main">
                         <h2>Get In Touch</h2>
-                        <p>Want to work with me, contract my services, or discuss the Detroit Red Wings? Send me a message below!</p>
+                        <p>Send me a message below!</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <form name="contact" method="POST" enctype="text/plain" data-netlify="true" data-netlify-recaptcha="true">
@@ -14,7 +14,7 @@ const Contact = () => (
                                         <div data-netlify-recaptcha="true"></div>
                                     </div>
                                 <ul className="actions ">
-                                    <li><input type="submit" value="Send Message" /></li>
+                                    <li><button type="submit">Submit</button></li>
                                 </ul>
                                 </form>
                             </div>
