@@ -8,6 +8,7 @@ const Contact = () => (
                             <div className="8u 12u$(small)">
                                 <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                                     <div className="row uniform 50%">
+                                        <input type="hidden" name="form-name" value="contact" />
                                         <p className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></p>
                                         <p className="6u 12u$(xsmall)"><input type="email" name="email" id="_replyto" placeholder="Email" /></p>
                                         <p className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></p>
